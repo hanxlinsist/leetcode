@@ -1,1 +1,1 @@
-喜欢算法
+Talk is cheap, show me the code.
