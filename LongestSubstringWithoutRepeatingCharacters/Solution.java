@@ -11,7 +11,6 @@ public class Solution {
 			}
 			map.put(cs[i], i);
 		}
-		
 		return Math.max(maxLength, cs.length - start);
 	}
 }
