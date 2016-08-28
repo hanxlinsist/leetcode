@@ -15,7 +15,7 @@
 
 # StringBuilder版本 解题思路
 
-StringBuilder是可变对象，
+由于StringBuilder是可变对象，因此每一次递归调用时，传递的都是同一个对象。如果始终用这个对象会把所有的路径连接起来，这不是我们想要的结果。我们假设第[48行](https://github.com/hanxlinsist/leetcode/blob/master/Binary_Tree_Paths/Solution.java#L48)和第[59行](https://github.com/hanxlinsist/leetcode/blob/master/Binary_Tree_Paths/Solution.java#L59) 之间的代码是求当前节点到叶子节点的路径。 因此，当路径连接完以后，我们可以恰当地回溯到上个节点。
 
 # 时间和空间复杂度
 
